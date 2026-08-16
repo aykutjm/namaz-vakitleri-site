@@ -4,54 +4,95 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Namaz Vakitleri</title>
-<meta name="description" content="Namaz vakitleri, ezan bildirimleri, kıble, zikirmatik ve dualar — internetsiz çalışır, verileriniz cihazınızda kalır.">
+<meta name="description" content="Namaz vakitleri, ezan bildirimleri, kıble, zikirmatik ve dualar — internetsiz çalışır, reklamsız, verileriniz cihazınızda kalır.">
+<meta property="og:title" content="Namaz Vakitleri: Ezan &amp; Kıble">
+<meta property="og:description" content="Vaktinde, sade ve verinizle ilgilenmeyen namaz arkadaşınız. İnternetsiz, reklamsız, izlemesiz.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://aykutjm.github.io/namaz-vakitleri-site/ekran/vakitler.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230E4D38'/%3E%3Cpath d='M50 22 A26 26 0 1 0 50 78 A30 30 0 0 1 50 22 Z' fill='%23E3B94F'/%3E%3Crect x='60' y='43' width='14' height='14' fill='%23E3B94F'/%3E%3Crect x='60' y='43' width='14' height='14' fill='%23E3B94F' transform='rotate(45 67 50)'/%3E%3C/svg%3E">
 <style>
-  :root { --zumrut:#0E4D38; --altin:#D4AF54; --fildisi:#F7F4EC; --metin:#22302B; }
+  :root { --zumrut:#0E4D38; --koyu:#0F2E27; --gece:#14213D; --altin:#E3B94F; --fildisi:#F7F4EC; --metin:#22302B; --soluk:#66736C; }
   * { margin:0; box-sizing:border-box; }
   body { font-family: Georgia, 'Times New Roman', serif; background:var(--fildisi); color:var(--metin); line-height:1.7; }
-  .kahraman { background:linear-gradient(135deg,#14213D,#0F3D33); color:#fff; text-align:center; padding:72px 24px 64px; }
-  .hilal { font-size:56px; }
-  h1 { font-size:2.6rem; margin:12px 0 8px; letter-spacing:.5px; }
-  .slogan { color:#E8E4D8; font-style:italic; max-width:34rem; margin:0 auto; }
-  .rozetler { margin-top:28px; display:flex; gap:10px; justify-content:center; flex-wrap:wrap; }
-  .rozet { border:1px solid rgba(255,255,255,.35); border-radius:999px; padding:6px 16px; font-size:.85rem; color:#F2D27C; }
-  main { max-width:680px; margin:0 auto; padding:48px 24px; }
-  h2 { color:var(--zumrut); margin:32px 0 8px; }
-  ul { padding-left:22px; }
-  li { margin-bottom:6px; }
-  footer { text-align:center; padding:32px 24px 48px; font-size:.85rem; color:#66736C; }
-  a { color:var(--zumrut); }
+  .kahraman { background:linear-gradient(135deg,var(--gece),var(--koyu)); color:#fff; text-align:center; padding:80px 24px 64px; position:relative; overflow:hidden; }
+  .hilal-svg { width:84px; height:84px; }
+  h1 { font-size:clamp(2.2rem,6vw,3.2rem); margin:16px 0 10px; letter-spacing:.5px; }
+  .slogan { color:#E8E4D8; font-style:italic; max-width:36rem; margin:0 auto; font-size:1.08rem; }
+  .rozetler { margin-top:30px; display:flex; gap:10px; justify-content:center; flex-wrap:wrap; }
+  .rozet { border:1px solid rgba(255,255,255,.35); border-radius:999px; padding:7px 18px; font-size:.88rem; color:#F2D27C; }
+  .yakinda { display:inline-block; margin-top:34px; background:var(--altin); color:#14342B; font-weight:bold; border-radius:12px; padding:13px 28px; font-size:1rem; letter-spacing:.3px; }
+  main { max-width:960px; margin:0 auto; padding:56px 24px; }
+  h2 { color:var(--zumrut); font-size:1.7rem; margin:0 0 20px; text-align:center; }
+  .ekranlar { display:flex; gap:18px; overflow-x:auto; padding:8px 4px 20px; justify-content:flex-start; scroll-snap-type:x mandatory; }
+  .ekranlar img { width:220px; border-radius:22px; border:1px solid #DDD6C6; box-shadow:0 10px 30px rgba(14,77,56,.18); scroll-snap-align:center; flex:0 0 auto; }
+  .ozellikler { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px; margin-top:8px; }
+  .kart { background:#fff; border:1px solid #E4DFD2; border-radius:14px; padding:20px 22px; }
+  .kart h3 { color:var(--zumrut); margin-bottom:6px; font-size:1.05rem; }
+  .kart p { font-size:.93rem; color:var(--soluk); }
+  .gizlilik-bant { background:var(--zumrut); color:#fff; text-align:center; padding:44px 24px; margin-top:56px; }
+  .gizlilik-bant h2 { color:#F2D27C; }
+  .gizlilik-bant p { max-width:38rem; margin:0 auto 14px; color:#E8E4D8; }
+  .gizlilik-bant a { color:#F2D27C; }
+  footer { text-align:center; padding:34px 24px 48px; font-size:.85rem; color:var(--soluk); }
+  footer a { color:var(--zumrut); }
+  section { margin-top:56px; }
 </style>
 </head>
 <body>
 <div class="kahraman">
-  <div class="hilal">☪</div>
+  <svg class="hilal-svg" viewBox="0 0 100 100" aria-hidden="true">
+    <path d="M50 14 A32 32 0 1 0 50 86 A37 37 0 0 1 50 14 Z" fill="#E3B94F"/>
+    <rect x="62" y="41" width="17" height="17" fill="#E3B94F"/>
+    <rect x="62" y="41" width="17" height="17" fill="#E3B94F" transform="rotate(45 70.5 49.5)"/>
+  </svg>
   <h1>Namaz Vakitleri</h1>
   <p class="slogan">Vaktinde, sade ve senin verinle ilgilenmeyen namaz arkadaşın.</p>
   <div class="rozetler">
     <span class="rozet">İnternetsiz çalışır</span>
     <span class="rozet">Reklamsız</span>
-    <span class="rozet">Verilerin cihazında</span>
+    <span class="rozet">İzleme yok</span>
+    <span class="rozet">81 il · Diyanet uyumlu</span>
   </div>
+  <div class="yakinda">Yakında Google Play'de</div>
 </div>
+
 <main>
-  <h2>Özellikler</h2>
-  <ul>
-    <li>Diyanet yöntemiyle cihazda hesaplanan namaz vakitleri (81 il)</li>
-    <li>Dakikası dakikasına ezan bildirimleri ve vakit öncesi hatırlatma</li>
-    <li>Kilit ekranında canlı vakit sayacı ve günün ayeti/hadisi</li>
-    <li>Ana ekran widget'ları: geri sayım, günlük vakitler, günün içeriği</li>
-    <li>Kıble pusulası, zikirmatik, hicri takvim ve dini günler</li>
-    <li>Kaynaklı dua, ayet, hadis ve özlü söz kitaplığı</li>
-    <li>Büyük Yazı Modu ve karanlık tema</li>
-  </ul>
-  <h2>Gizlilik</h2>
-  <p>Namaz Vakitleri hiçbir kişisel veri toplamaz. Vakitler cihazında hesaplanır;
-  hesap yoktur, reklam yoktur, izleme yoktur.
-  Ayrıntılar: <a href="gizlilik.html">Gizlilik Politikası</a></p>
-  <h2>İletişim</h2>
-  <p><a href="mailto:waoyazilim@gmail.com">waoyazilim@gmail.com</a></p>
+  <section style="margin-top:0">
+    <h2>Uygulamadan kareler</h2>
+    <div class="ekranlar">
+      <img src="ekran/vakitler.png" alt="Vakitler ekranı: sıradaki vakte canlı geri sayım ve günün vakitleri" loading="lazy">
+      <img src="ekran/dua.png" alt="Dua detayı: Arapça metin, okunuş ve anlam" loading="lazy">
+      <img src="ekran/zikir.png" alt="Zikirmatik: hedefli sayım" loading="lazy">
+      <img src="ekran/takvim.png" alt="Hicri takvim ve yaklaşan dini günler" loading="lazy">
+    </div>
+  </section>
+
+  <section>
+    <h2>Neler var?</h2>
+    <div class="ozellikler">
+      <div class="kart"><h3>🕌 Dakikası dakikasına ezan</h3><p>Diyanet yöntemiyle cihazında hesaplanan vakitler; vakit öncesi hatırlatma ve vakit başına sesli/sessiz seçimi.</p></div>
+      <div class="kart"><h3>🌙 Kilit ekranı sayacı</h3><p>Sıradaki vakte canlı geri sayım ve günün ayeti/hadisi — telefonu açmadan gör.</p></div>
+      <div class="kart"><h3>🖼️ Şık widget'lar</h3><p>Geri sayım, günlük vakitler ve günün içeriği; buzlu cam veya kart stili, koyu temaya tam uyum.</p></div>
+      <div class="kart"><h3>🧭 Kıble pusulası</h3><p>Hassas yön; kıbleye dönünce titreşimle onay.</p></div>
+      <div class="kart"><h3>📿 Zikirmatik</h3><p>33/99/500/serbest hedefler, titreşimli sayım, kalıcı toplam.</p></div>
+      <div class="kart"><h3>📖 Kaynaklı kitaplık</h3><p>Namaz duaları, ayetler, sahih hadisler ve özlü sözler — hepsi kaynaklı; Arapça + okunuş + anlam.</p></div>
+      <div class="kart"><h3>📅 Hicri takvim</h3><p>Kandiller ve dini günler; kandil sabahı hatırlatma.</p></div>
+      <div class="kart"><h3>👵 Büyük Yazı Modu</h3><p>Tek dokunuşla tüm uygulamada büyük, okunaklı yazı.</p></div>
+      <div class="kart"><h3>🔔 Bildirim Güvencesi</h3><p>Sağlık Testi ve cihazına özel pil rehberi — "bildirim gelmedi" derdine son.</p></div>
+    </div>
+  </section>
 </main>
-<footer>© 2026 Namaz Vakitleri · <a href="gizlilik.html">Gizlilik Politikası</a></footer>
+
+<div class="gizlilik-bant">
+  <h2>Gizlilik sözümüz</h2>
+  <p>Hesap yok. Reklam yok. İzleme yok. Veri toplama yok. Vakitler cihazında
+  hesaplanır; uygulama internetsiz çalışır ve verilerin cihazında kalır.</p>
+  <p><a href="gizlilik.html">Gizlilik Politikası →</a></p>
+</div>
+
+<footer>
+  © 2026 Namaz Vakitleri · <a href="gizlilik.html">Gizlilik Politikası</a> ·
+  <a href="mailto:waoyazilim@gmail.com">waoyazilim@gmail.com</a>
+</footer>
 </body>
 </html>
