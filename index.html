@@ -3,95 +3,298 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Namaz Vakitleri</title>
-<meta name="description" content="Namaz vakitleri, ezan bildirimleri, kıble, zikirmatik ve dualar — internetsiz çalışır, reklamsız, verileriniz cihazınızda kalır.">
-<meta property="og:title" content="Namaz Vakitleri: Ezan &amp; Kıble">
-<meta property="og:description" content="Vaktinde, sade ve verinizle ilgilenmeyen namaz arkadaşınız. İnternetsiz, reklamsız, izlemesiz.">
+<title>Namaz Vakitleri: İnternetsiz | Ezan, Kıble, Kur'an (Android)</title>
+<meta name="description" content="Diyanet uyumlu namaz vakitleri, dakikasında ezan bildirimi, kıble pusulası, zikirmatik ve Kur'an-ı Kerim. İnternetsiz, reklamsız, ücretsiz Android uygulaması.">
+<link rel="canonical" href="https://namazvakitleri.app/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0E4D38">
+<meta name="author" content="WAO">
+
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://namazvakitleri.app/ekran/vakitler.png">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230E4D38'/%3E%3Cpath d='M50 22 A26 26 0 1 0 50 78 A30 30 0 0 1 50 22 Z' fill='%23E3B94F'/%3E%3Crect x='60' y='43' width='14' height='14' fill='%23E3B94F'/%3E%3Crect x='60' y='43' width='14' height='14' fill='%23E3B94F' transform='rotate(45 67 50)'/%3E%3C/svg%3E">
+<meta property="og:site_name" content="Namaz Vakitleri">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:url" content="https://namazvakitleri.app/">
+<meta property="og:title" content="Namaz Vakitleri: İnternetsiz — Ezan, Kıble, Kur'an">
+<meta property="og:description" content="Vaktinde, sade ve verinizle ilgilenmeyen namaz arkadaşınız. Diyanet uyumlu vakitler, ezan bildirimi, kıble, Kur'an. İnternetsiz, reklamsız, ücretsiz.">
+<meta property="og:image" content="https://namazvakitleri.app/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Namaz Vakitleri uygulaması: hilal ve yıldız logosu; ezan bildirimi, kıble, zikirmatik">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Namaz Vakitleri: İnternetsiz — Ezan, Kıble, Kur'an">
+<meta name="twitter:description" content="Diyanet uyumlu vakitler, dakikasında ezan bildirimi, kıble pusulası ve Kur'an-ı Kerim. İnternetsiz, reklamsız, ücretsiz Android uygulaması.">
+<meta name="twitter:image" content="https://namazvakitleri.app/og.png">
+
+<link rel="icon" type="image/png" sizes="192x192" href="ikon-192.png">
+<link rel="apple-touch-icon" href="ikon-192.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://namazvakitleri.app/#wao",
+      "name": "WAO",
+      "url": "https://namazvakitleri.app/",
+      "email": "waoyazilim@gmail.com",
+      "logo": "https://namazvakitleri.app/ikon-512.png"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://namazvakitleri.app/#site",
+      "url": "https://namazvakitleri.app/",
+      "name": "Namaz Vakitleri",
+      "inLanguage": "tr",
+      "publisher": { "@id": "https://namazvakitleri.app/#wao" }
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://namazvakitleri.app/#app",
+      "name": "Namaz Vakitleri: İnternetsiz",
+      "alternateName": "Namaz Vakitleri",
+      "url": "https://namazvakitleri.app/",
+      "installUrl": "https://play.google.com/store/apps/details?id=com.waoyazilim.namazvakti",
+      "operatingSystem": "Android 8.0 ve üzeri",
+      "applicationCategory": "LifestyleApplication",
+      "inLanguage": ["tr", "en"],
+      "softwareVersion": "1.0.0",
+      "datePublished": "2026-09-05",
+      "isAccessibleForFree": true,
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "TRY", "availability": "https://schema.org/InStock" },
+      "image": "https://namazvakitleri.app/ikon-512.png",
+      "screenshot": [
+        "https://namazvakitleri.app/ekran/vakitler.webp",
+        "https://namazvakitleri.app/ekran/kuran.webp",
+        "https://namazvakitleri.app/ekran/sureler.webp",
+        "https://namazvakitleri.app/ekran/hatim.webp",
+        "https://namazvakitleri.app/ekran/kitaplik.webp",
+        "https://namazvakitleri.app/ekran/takvim.webp",
+        "https://namazvakitleri.app/ekran/kible.webp",
+        "https://namazvakitleri.app/ekran/esma.webp"
+      ],
+      "description": "Diyanet uyumlu namaz vakitleri, dakikası dakikasına ezan bildirimi, kıble pusulası, zikirmatik, Kur'an-ı Kerim (Arapça metin, Elmalılı meali, Türkçe okunuş, sesli tilavet), dua ve hadis kitaplığı, hicri takvim. İnternetsiz çalışır, reklam ve veri toplama yoktur.",
+      "featureList": "Diyanet uyumlu vakitler (81 il), ezan bildirimi ve vakit öncesi hatırlatma, 4 müezzin seçenekli ezan, kilit ekranı sayacı, ana ekran widget'ları, kıble pusulası, zikirmatik, Kur'an-ı Kerim ve hatim takibi, dua/ayet/hadis kitaplığı, hicri takvim ve kandil hatırlatması, kaza namazı takibi, Esmâü'l-Hüsna, Büyük Yazı Modu",
+      "author": { "@id": "https://namazvakitleri.app/#wao" },
+      "publisher": { "@id": "https://namazvakitleri.app/#wao" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Namaz Vakitleri uygulaması internetsiz çalışır mı?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Evet. Vakitler cihazınızda Diyanet yöntemiyle hesaplanır; Kur'an metni, meal, okunuş ve dualar uygulamanın içindedir. İnternet yalnızca Diyanet'in resmî vakit tablosunu ve sesli tilaveti indirmek için kullanılır, ikisi olmadan da uygulama tam çalışır." }
+        },
+        {
+          "@type": "Question",
+          "name": "Vakitler Diyanet takvimiyle aynı mı?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Evet. 81 il için Diyanet İşleri Başkanlığı'nın resmî tablosu esas alınır; internet varken vakitler bu tablodan birebir gösterilir. Google aramasında çıkan vakitler farklı bir hesap yöntemi kullandığı için birkaç dakika sapabilir; camilerde ezan Diyanet takvimine göre okunur." }
+        },
+        {
+          "@type": "Question",
+          "name": "Uygulama ücretsiz mi, reklam var mı?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Tamamen ücretsiz. Reklam, uygulama içi satın alma ve abonelik yoktur." }
+        },
+        {
+          "@type": "Question",
+          "name": "Hangi telefonlarda çalışır?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Android 8.0 ve üzeri tüm telefon ve tabletlerde çalışır. İndirme boyutu yaklaşık 17 MB'dir. iOS sürümü yol haritamızdadır." }
+        },
+        {
+          "@type": "Question",
+          "name": "Ezan sesi seçilebilir mi?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Evet. Her vakit için sesli veya sessiz bildirim seçebilir, kısa tekbir tonu ya da dört müezzinden birinin tam ezanını kullanabilirsiniz: Ahmed el-İmadi, Nasser el-Katami, Macid el-Hamathani ve Muhtar Hac Slimane. Seçerken anında dinlersiniz." }
+        },
+        {
+          "@type": "Question",
+          "name": "Verilerim toplanıyor mu, konum izni istiyor mu?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Hayır. Hesap, reklam ve analitik kütüphanesi yoktur; hiçbir kişisel veri toplanmaz. Konum izni istenmez, ilinizi listeden kendiniz seçersiniz." }
+        },
+        {
+          "@type": "Question",
+          "name": "Ezan bildirimi gelmezse ne yapmalıyım?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Ayarlar'daki Bildirim Sağlık Testi'ni çalıştırın. Uygulama, cihazınızın markasına göre pil ayarı rehberi gösterir; çoğu telefonda sorun pil optimizasyonundan kaynaklanır ve bir dokunuşla çözülür." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
 <style>
   :root { --zumrut:#0E4D38; --koyu:#0F2E27; --gece:#14213D; --altin:#E3B94F; --fildisi:#F7F4EC; --metin:#22302B; --soluk:#66736C; }
   * { margin:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
   body { font-family: Georgia, 'Times New Roman', serif; background:var(--fildisi); color:var(--metin); line-height:1.7; }
-  .kahraman { background:linear-gradient(135deg,var(--gece),var(--koyu)); color:#fff; text-align:center; padding:80px 24px 64px; position:relative; overflow:hidden; }
+  a { color:var(--zumrut); }
+  .kahraman { background:linear-gradient(135deg,var(--gece),var(--koyu)); color:#fff; text-align:center; padding:72px 24px 60px; }
   .hilal-svg { width:84px; height:84px; }
-  h1 { font-size:clamp(2.2rem,6vw,3.2rem); margin:16px 0 10px; letter-spacing:.5px; }
-  .slogan { color:#E8E4D8; font-style:italic; max-width:36rem; margin:0 auto; font-size:1.08rem; }
-  .rozetler { margin-top:30px; display:flex; gap:10px; justify-content:center; flex-wrap:wrap; }
+  h1 { font-size:clamp(2rem,6vw,3rem); margin:16px 0 8px; letter-spacing:.3px; }
+  .slogan { color:#E8E4D8; font-style:italic; max-width:38rem; margin:0 auto; font-size:1.08rem; }
+  .rozetler { margin-top:26px; display:flex; gap:10px; justify-content:center; flex-wrap:wrap; }
   .rozet { border:1px solid rgba(255,255,255,.35); border-radius:999px; padding:7px 18px; font-size:.88rem; color:#F2D27C; }
-  .yakinda { display:inline-block; margin-top:34px; background:var(--altin); color:#14342B; font-weight:bold; border-radius:12px; padding:13px 28px; font-size:1rem; letter-spacing:.3px; }
-  main { max-width:960px; margin:0 auto; padding:56px 24px; }
+  .indir { margin-top:32px; display:flex; flex-direction:column; align-items:center; gap:10px; }
+  .indir img { height:72px; width:auto; display:block; }
+  .indir a:focus-visible { outline:3px solid var(--altin); outline-offset:4px; border-radius:10px; }
+  .indir small { color:#C9C4B4; font-size:.86rem; }
+  main { max-width:960px; margin:0 auto; padding:56px 24px 24px; }
+  section { margin-bottom:56px; }
   h2 { color:var(--zumrut); font-size:1.7rem; margin:0 0 20px; text-align:center; }
-  .ekranlar { display:flex; gap:18px; overflow-x:auto; padding:8px 4px 20px; justify-content:flex-start; scroll-snap-type:x mandatory; }
-  .ekranlar img { width:220px; border-radius:22px; border:1px solid #DDD6C6; box-shadow:0 10px 30px rgba(14,77,56,.18); scroll-snap-align:center; flex:0 0 auto; }
-  .ozellikler { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px; margin-top:8px; }
+  .giris { text-align:center; max-width:44rem; margin:-6px auto 24px; color:var(--soluk); }
+  .ekranlar { display:flex; gap:18px; overflow-x:auto; padding:8px 4px 20px; scroll-snap-type:x mandatory; }
+  .ekranlar img { width:220px; height:auto; border-radius:22px; border:1px solid #DDD6C6; box-shadow:0 10px 30px rgba(14,77,56,.18); scroll-snap-align:center; flex:0 0 auto; background:#fff; }
+  .ozellikler { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px; }
   .kart { background:#fff; border:1px solid #E4DFD2; border-radius:14px; padding:20px 22px; }
   .kart h3 { color:var(--zumrut); margin-bottom:6px; font-size:1.05rem; }
   .kart p { font-size:.93rem; color:var(--soluk); }
-  .gizlilik-bant { background:var(--zumrut); color:#fff; text-align:center; padding:44px 24px; margin-top:56px; }
-  .gizlilik-bant h2 { color:#F2D27C; }
-  .gizlilik-bant p { max-width:38rem; margin:0 auto 14px; color:#E8E4D8; }
-  .gizlilik-bant a { color:#F2D27C; }
-  footer { text-align:center; padding:34px 24px 48px; font-size:.85rem; color:var(--soluk); }
+  .kaynak { background:#fff; border:1px solid #E4DFD2; border-radius:14px; padding:24px 26px; max-width:44rem; margin:0 auto; }
+  .kaynak ul { padding-left:20px; margin-top:10px; color:var(--soluk); font-size:.95rem; }
+  .sss { max-width:44rem; margin:0 auto; }
+  .sss details { background:#fff; border:1px solid #E4DFD2; border-radius:12px; padding:0 20px; margin-bottom:10px; }
+  .sss summary { cursor:pointer; padding:14px 0; font-weight:bold; color:var(--zumrut); list-style:none; }
+  .sss summary::-webkit-details-marker { display:none; }
+  .sss summary::before { content:"+"; display:inline-block; width:1.2em; color:var(--altin); font-weight:bold; }
+  .sss details[open] summary::before { content:"–"; }
+  .sss details p { padding:0 0 16px 1.2em; color:var(--metin); font-size:.96rem; }
+  .gizlilik-bant { background:var(--zumrut); color:#fff; text-align:center; padding:56px 24px; }
+  .gizlilik-bant h2 { color:#fff; }
+  .gizlilik-bant p { max-width:40rem; margin:0 auto 14px; color:#E8E4D8; }
+  .gizlilik-bant a { color:var(--altin); }
+  .son-cagri { text-align:center; padding:56px 24px 40px; }
+  .son-cagri h2 { margin-bottom:14px; }
+  .son-cagri .indir small { color:var(--soluk); }
+  footer { text-align:center; padding:28px 24px 44px; color:var(--soluk); font-size:.9rem; }
   footer a { color:var(--zumrut); }
-  section { margin-top:56px; }
 </style>
 </head>
 <body>
-<div class="kahraman">
+
+<header class="kahraman">
   <svg class="hilal-svg" viewBox="0 0 100 100" aria-hidden="true">
     <path d="M50 14 A32 32 0 1 0 50 86 A37 37 0 0 1 50 14 Z" fill="#E3B94F"/>
     <rect x="62" y="41" width="17" height="17" fill="#E3B94F"/>
     <rect x="62" y="41" width="17" height="17" fill="#E3B94F" transform="rotate(45 70.5 49.5)"/>
   </svg>
-  <h1>Namaz Vakitleri</h1>
-  <p class="slogan">Vaktinde, sade ve senin verinle ilgilenmeyen namaz arkadaşın.</p>
+  <h1>Namaz Vakitleri: İnternetsiz</h1>
+  <p class="slogan">Diyanet uyumlu namaz vakitleri, dakikasında ezan bildirimi, kıble pusulası ve Kur'an-ı Kerim. Vaktinde, sade ve senin verinle ilgilenmeyen namaz arkadaşın.</p>
   <div class="rozetler">
     <span class="rozet">İnternetsiz çalışır</span>
     <span class="rozet">Reklamsız</span>
     <span class="rozet">İzleme yok</span>
     <span class="rozet">81 il · Diyanet uyumlu</span>
   </div>
-  <div class="yakinda">Yakında Google Play'de</div>
-</div>
+  <div class="indir">
+    <a href="https://play.google.com/store/apps/details?id=com.waoyazilim.namazvakti" rel="noopener">
+      <img src="google-play-rozeti.png" width="646" height="250" alt="Google Play'den alın: Namaz Vakitleri: İnternetsiz">
+    </a>
+    <small>Ücretsiz · Android 8.0 ve üzeri · yaklaşık 17 MB</small>
+  </div>
+</header>
 
 <main>
-  <section style="margin-top:0">
-    <h2>Uygulamadan kareler</h2>
+  <section aria-labelledby="ekranlar-baslik">
+    <h2 id="ekranlar-baslik">Uygulamadan kareler</h2>
     <div class="ekranlar">
-      <img src="ekran/vakitler.png" alt="Vakitler ekranı: sıradaki vakte canlı geri sayım ve günün vakitleri" loading="lazy">
-      <img src="ekran/dua.png" alt="Dua detayı: Arapça metin, okunuş ve anlam" loading="lazy">
-      <img src="ekran/zikir.png" alt="Zikirmatik: hedefli sayım" loading="lazy">
-      <img src="ekran/takvim.png" alt="Hicri takvim ve yaklaşan dini günler" loading="lazy">
+      <img src="ekran/vakitler.webp" width="540" height="1100" alt="Namaz vakitleri ekranı: günün altı vakti ve imsak vaktine canlı geri sayım">
+      <img src="ekran/kuran.webp" width="540" height="1100" alt="Kur'an-ı Kerim okuma ekranı: Arapça metin, Türkçe okunuş ve Elmalılı meali bir arada" loading="lazy">
+      <img src="ekran/sureler.webp" width="540" height="1100" alt="114 surenin listesi, tamamı cihazda ve çevrimdışı okunabilir" loading="lazy">
+      <img src="ekran/hatim.webp" width="540" height="1100" alt="Cüz cüz hatim takibi ve süreli hatim planı" loading="lazy">
+      <img src="ekran/kitaplik.webp" width="540" height="1100" alt="Dua, ayet ve hadis kitaplığı; kaynak gösteren içerikler" loading="lazy">
+      <img src="ekran/takvim.webp" width="540" height="1100" alt="Hicri takvim, yaklaşan kandiller ve kaza namazı takibi" loading="lazy">
+      <img src="ekran/kible.webp" width="540" height="1100" alt="Kıble pusulası, hizalanınca titreşimli onay" loading="lazy">
+      <img src="ekran/esma.webp" width="540" height="1100" alt="Esmâü'l-Hüsna: Allah'ın 99 ismi ve anlamları" loading="lazy">
     </div>
   </section>
 
-  <section>
-    <h2>Neler var?</h2>
+  <section aria-labelledby="ozellik-baslik">
+    <h2 id="ozellik-baslik">Namaz vakitleri uygulamasında neler var?</h2>
+    <p class="giris">Ezan vakti bildiriminden Kur'an-ı Kerim'e kadar günlük ibadetin tamamı tek uygulamada, hepsi cihazınızda.</p>
     <div class="ozellikler">
-      <div class="kart"><h3>🕌 Dakikası dakikasına ezan</h3><p>Diyanet yöntemiyle cihazında hesaplanan vakitler; vakit öncesi hatırlatma ve vakit başına sesli/sessiz seçimi.</p></div>
-      <div class="kart"><h3>🌙 Kilit ekranı sayacı</h3><p>Sıradaki vakte canlı geri sayım ve günün ayeti/hadisi — telefonu açmadan gör.</p></div>
-      <div class="kart"><h3>🖼️ Şık widget'lar</h3><p>Geri sayım, günlük vakitler ve günün içeriği; buzlu cam veya kart stili, koyu temaya tam uyum.</p></div>
-      <div class="kart"><h3>🧭 Kıble pusulası</h3><p>Hassas yön; kıbleye dönünce titreşimle onay.</p></div>
-      <div class="kart"><h3>📿 Zikirmatik</h3><p>33/99/500/serbest hedefler, titreşimli sayım, kalıcı toplam.</p></div>
-      <div class="kart"><h3>📖 Kaynaklı kitaplık</h3><p>Namaz duaları, ayetler, sahih hadisler ve özlü sözler — hepsi kaynaklı; Arapça + okunuş + anlam.</p></div>
-      <div class="kart"><h3>📅 Hicri takvim</h3><p>Kandiller ve dini günler; kandil sabahı hatırlatma.</p></div>
-      <div class="kart"><h3>👵 Büyük Yazı Modu</h3><p>Tek dokunuşla tüm uygulamada büyük, okunaklı yazı.</p></div>
-      <div class="kart"><h3>🔔 Bildirim Güvencesi</h3><p>Sağlık Testi ve cihazına özel pil rehberi — "bildirim gelmedi" derdine son.</p></div>
+      <div class="kart"><h3>🕌 Diyanet uyumlu vakitler</h3><p>81 il için imsak, güneş, öğle, ikindi, akşam ve yatsı. İnternet varken Diyanet'in resmî tablosu, yokken cihazda Diyanet yöntemiyle hesap; asla vakitsiz kalmazsınız.</p></div>
+      <div class="kart"><h3>🔔 Dakikasında ezan bildirimi</h3><p>Vakit öncesi 5–45 dakika hatırlatma, vakit başına sesli veya sessiz seçim. Kısa tekbir tonu ya da dört müezzinden tam ezan; seçerken anında dinlersiniz.</p></div>
+      <div class="kart"><h3>🕋 Kur'an-ı Kerim, tamamı cihazınızda</h3><p>114 sure: Arapça metin, Elmalılı Hamdi Yazır meali ve Türkçe okunuş bir arada. Mişari Raşid el-Afâsî tilaveti, çalan ayet vurgusu, hız seçeneği, kaldığınız yerden devam.</p></div>
+      <div class="kart"><h3>📗 Hatim takibi</h3><p>Cüz cüz hatim takibi ve 1, 3 veya 6 aylık süreli hatim planı. Ayet paylaşma ve yazı boyutu ayarı.</p></div>
+      <div class="kart"><h3>🌙 Kilit ekranı sayacı</h3><p>Sıradaki vakte canlı geri sayım ve günün ayeti veya hadisi; telefonu açmadan görün.</p></div>
+      <div class="kart"><h3>🖼️ Ana ekran widget'ları</h3><p>Vakte geri sayım, günlük vakitler ve günün içeriği. Şeffaf cam veya kart stili, karanlık temaya tam uyum.</p></div>
+      <div class="kart"><h3>🧭 Kıble pusulası</h3><p>Hassas kıble yönü; kıbleye dönünce titreşimle onay.</p></div>
+      <div class="kart"><h3>📿 Zikirmatik</h3><p>33, 99, 500 veya serbest hedef; titreşimli sayım ve kalıcı toplam.</p></div>
+      <div class="kart"><h3>📖 Kaynaklı dua ve hadis kitaplığı</h3><p>Namaz duaları (Sübhâneke, Ettehiyyâtü, Kunutlar), günlük dualar, ayetler ve sahih hadisler. Arapça metin, okunuş ve anlam; hepsi kaynak gösterir.</p></div>
+      <div class="kart"><h3>📅 Hicri takvim ve kaza takibi</h3><p>Bugünün hicri tarihi, yaklaşan kandiller ve kandil sabahı hatırlatması. Kaza namazı takibi (5 vakit ve vitir) ve kerahat vakti uyarısı.</p></div>
+      <div class="kart"><h3>✨ Esmâü'l-Hüsna</h3><p>Allah'ın 99 ismi, okunuşları ve anlamlarıyla.</p></div>
+      <div class="kart"><h3>👵 Büyük Yazı Modu</h3><p>Tek dokunuşla tüm uygulamada büyük, okunaklı yazı; anne babalarımız için.</p></div>
+      <div class="kart"><h3>🛡️ Bildirim Güvencesi</h3><p>Bildirim Sağlık Testi ve cihazınıza özel pil ayarı rehberi; "bildirim gelmedi" derdine son.</p></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="kaynak-baslik">
+    <h2 id="kaynak-baslik">Vakitler ve içerik nereden geliyor?</h2>
+    <div class="kaynak">
+      <p>Uygulama hesabını kendi uydurmaz; her içeriğin kaynağı bellidir ve uygulama içinde gösterilir.</p>
+      <ul>
+        <li><strong>Namaz vakitleri:</strong> Diyanet İşleri Başkanlığı resmî takvimi (81 il). İnternet yokken aynı yöntemle cihazda hesaplanır, fark en fazla bir iki dakikadır.</li>
+        <li><strong>Kur'an metni:</strong> Tanzil projesi Arapça metni; <strong>meal:</strong> Elmalılı Hamdi Yazır.</li>
+        <li><strong>Tilavet:</strong> Mişari Raşid el-Afâsî; <strong>ezan:</strong> Ahmed el-İmadi, Nasser el-Katami, Macid el-Hamathani, Muhtar Hac Slimane.</li>
+        <li><strong>Hadisler:</strong> sahih kaynaklardan, kitap ve numara bilgisiyle.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section aria-labelledby="sss-baslik">
+    <h2 id="sss-baslik">Sık sorulan sorular</h2>
+    <div class="sss">
+      <details>
+        <summary>Namaz Vakitleri uygulaması internetsiz çalışır mı?</summary>
+        <p>Evet. Vakitler cihazınızda Diyanet yöntemiyle hesaplanır; Kur'an metni, meal, okunuş ve dualar uygulamanın içindedir. İnternet yalnızca Diyanet'in resmî vakit tablosunu ve sesli tilaveti indirmek için kullanılır, ikisi olmadan da uygulama tam çalışır.</p>
+      </details>
+      <details>
+        <summary>Vakitler Diyanet takvimiyle aynı mı?</summary>
+        <p>Evet. 81 il için Diyanet İşleri Başkanlığı'nın resmî tablosu esas alınır; internet varken vakitler bu tablodan birebir gösterilir. Google aramasında çıkan vakitler farklı bir hesap yöntemi kullandığı için birkaç dakika sapabilir; camilerde ezan Diyanet takvimine göre okunur.</p>
+      </details>
+      <details>
+        <summary>Uygulama ücretsiz mi, reklam var mı?</summary>
+        <p>Tamamen ücretsiz. Reklam, uygulama içi satın alma ve abonelik yoktur.</p>
+      </details>
+      <details>
+        <summary>Hangi telefonlarda çalışır?</summary>
+        <p>Android 8.0 ve üzeri tüm telefon ve tabletlerde çalışır. İndirme boyutu yaklaşık 17 MB'dir. iOS sürümü yol haritamızdadır.</p>
+      </details>
+      <details>
+        <summary>Ezan sesi seçilebilir mi?</summary>
+        <p>Evet. Her vakit için sesli veya sessiz bildirim seçebilir, kısa tekbir tonu ya da dört müezzinden birinin tam ezanını kullanabilirsiniz: Ahmed el-İmadi, Nasser el-Katami, Macid el-Hamathani ve Muhtar Hac Slimane. Seçerken anında dinlersiniz.</p>
+      </details>
+      <details>
+        <summary>Verilerim toplanıyor mu, konum izni istiyor mu?</summary>
+        <p>Hayır. Hesap, reklam ve analitik kütüphanesi yoktur; hiçbir kişisel veri toplanmaz. Konum izni istenmez, ilinizi listeden kendiniz seçersiniz.</p>
+      </details>
+      <details>
+        <summary>Ezan bildirimi gelmezse ne yapmalıyım?</summary>
+        <p>Ayarlar'daki Bildirim Sağlık Testi'ni çalıştırın. Uygulama, cihazınızın markasına göre pil ayarı rehberi gösterir; çoğu telefonda sorun pil optimizasyonundan kaynaklanır ve bir dokunuşla çözülür.</p>
+      </details>
     </div>
   </section>
 </main>
 
-<div class="gizlilik-bant">
-  <h2>Gizlilik sözümüz</h2>
-  <p>Hesap yok. Reklam yok. İzleme yok. Veri toplama yok. Vakitler cihazında
-  hesaplanır; uygulama internetsiz çalışır ve verilerin cihazında kalır.</p>
+<section class="gizlilik-bant" aria-labelledby="gizlilik-baslik">
+  <h2 id="gizlilik-baslik">Gizlilik sözümüz</h2>
+  <p>Hesap yok. Reklam yok. İzleme yok. Veri toplama yok. Konum izni istenmez, ilinizi kendiniz seçersiniz. İnternet yalnızca Diyanet vakit tablosu ve sesli Kur'an indirmek için kullanılır.</p>
   <p><a href="gizlilik.html">Gizlilik Politikası →</a></p>
-</div>
+</section>
+
+<section class="son-cagri" aria-labelledby="indir-baslik">
+  <h2 id="indir-baslik">Hemen indirin</h2>
+  <div class="indir">
+    <a href="https://play.google.com/store/apps/details?id=com.waoyazilim.namazvakti" rel="noopener">
+      <img src="google-play-rozeti.png" width="646" height="250" alt="Google Play'den alın: Namaz Vakitleri: İnternetsiz" loading="lazy">
+    </a>
+    <small>Ücretsiz · Reklamsız · Android 8.0 ve üzeri</small>
+  </div>
+</section>
 
 <footer>
-  © 2026 Namaz Vakitleri · <a href="gizlilik.html">Gizlilik Politikası</a> ·
+  © 2026 WAO · Namaz Vakitleri: İnternetsiz ·
+  <a href="https://play.google.com/store/apps/details?id=com.waoyazilim.namazvakti" rel="noopener">Google Play</a> ·
+  <a href="gizlilik.html">Gizlilik Politikası</a> ·
   <a href="mailto:waoyazilim@gmail.com">waoyazilim@gmail.com</a>
 </footer>
 </body>

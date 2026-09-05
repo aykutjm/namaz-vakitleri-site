@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://namazvakitleri.app/</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image><image:loc>https://namazvakitleri.app/og.png</image:loc><image:title>Namaz Vakitleri: İnternetsiz</image:title></image:image>
+    <image:image><image:loc>https://namazvakitleri.app/ekran/vakitler.webp</image:loc><image:title>Namaz vakitleri ekranı</image:title></image:image>
+    <image:image><image:loc>https://namazvakitleri.app/ekran/kuran.webp</image:loc><image:title>Kur'an-ı Kerim okuma ekranı</image:title></image:image>
+    <image:image><image:loc>https://namazvakitleri.app/ekran/kible.webp</image:loc><image:title>Kıble pusulası</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://namazvakitleri.app/gizlilik.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+</urlset>
