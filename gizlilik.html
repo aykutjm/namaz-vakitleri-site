@@ -4,14 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gizlilik Politikası — Namaz Vakitleri: İnternetsiz</title>
-<meta name="description" content="Namaz Vakitleri: İnternetsiz uygulamasının gizlilik politikası. Kişisel veri toplanmaz; hesap, reklam ve izleme yoktur. İnternet yalnızca Diyanet vakit tablosu ve sesli Kur'an indirmek için kullanılır.">
+<meta name="description" content="Namaz Vakitleri: İnternetsiz uygulamasının gizlilik politikası. Vakitler, bildirimler ve Kur'an cihazınızda çalışır; reklam ve izleme yoktur. İsteğe bağlı Hocaya Sor ve soru paketleri için hangi verilerin işlendiği.">
 <link rel="canonical" href="https://namazvakitleri.app/gizlilik.html">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#0E4D38">
 <link rel="icon" type="image/png" sizes="192x192" href="ikon-192.png">
 <style>
   body { font-family: Georgia, serif; background:#F7F4EC; color:#22302B; line-height:1.75; max-width:680px; margin:0 auto; padding:48px 24px; }
-  h1 { color:#0E4D38; } h2 { color:#0E4D38; margin-top:28px; }
+  h1 { color:#0E4D38; } h2 { color:#0E4D38; margin-top:28px; } h3 { color:#0E4D38; margin-bottom:4px; }
+  table { border-collapse:collapse; width:100%; font-size:.92rem; margin:12px 0; }
+  th, td { border:1px solid #D8D2C2; padding:6px 8px; text-align:left; vertical-align:top; }
+  th { background:#EDE7D7; }
   .tarih { color:#66736C; font-size:.9rem; }
   a { color:#0E4D38; }
   .geri { display:inline-block; margin-bottom:24px; font-size:.95rem; }
@@ -20,16 +23,17 @@
 <body>
 <a class="geri" href="/">← Ana sayfa</a>
 <h1>Gizlilik Politikası</h1>
-<p class="tarih">Son güncelleme: 5 Eylül 2026</p>
+<p class="tarih">Son güncelleme: 16 Kasım 2026</p>
 
 <p>Bu politika, Google Play'de yayımlanan <strong>Namaz Vakitleri: İnternetsiz</strong>
-(paket adı <code>com.waoyazilim.namazvakti</code>) mobil uygulaması için geçerlidir.
-Özetin özeti: <strong>hiçbir kişisel verinizi toplamıyoruz.</strong></p>
+(paket adı <code>com.waoyazilim.namazvakti</code>) mobil uygulaması için geçerlidir.</p>
 
-<h2>Toplanan veriler</h2>
-<p>Namaz Vakitleri hiçbir kişisel veri toplamaz, saklamaz veya üçüncü taraflarla
-paylaşmaz. Uygulamada hesap sistemi yoktur; reklam ve analitik/izleme
-kütüphanesi bulunmaz. Uygulamanın kendi sunucusu yoktur.</p>
+<p><strong>Özet:</strong> Namaz vakitleri, ezan bildirimleri, kıble, Kur'an, dualar,
+zikirmatik ve takip özellikleri tamamen cihazınızda çalışır ve kişisel veri toplamaz.
+Uygulamada reklam ve analitik/izleme kütüphanesi yoktur. Yalnızca isteğe bağlı
+<strong>Hocaya Sor</strong> bölümünü kullanırsanız sorduğunuz sorular cevaplanmak üzere
+sunucumuza gönderilir; soru paketi satın almak isterseniz Google hesabınızla giriş
+yaparsınız. Bu iki özellikte işlenen veriler aşağıda ayrıntılıdır.</p>
 
 <h2>Cihazınızda kalan bilgiler</h2>
 <p>Aşağıdaki bilgiler yalnızca uygulamanın çalışması için, yalnızca kendi
@@ -38,76 +42,211 @@ cihazınızda saklanır ve hiçbir sunucuya gönderilmez:</p>
   <li>Seçtiğiniz il ve uygulama tercihleri (bildirim, ezan sesi, tema, widget ayarları)</li>
   <li>İbadet takibi işaretleriniz, kaza kayıtlarınız ve zikir sayaçlarınız</li>
   <li>Kur'an'da kaldığınız yer, hatim ilerlemeniz ve favori içerikleriniz</li>
-  <li>İndirdiğiniz Diyanet vakit tablosu ve tilavet ses dosyaları (önbellek)</li>
+  <li>İndirilen vakit tablosu, tilavet ses dosyaları ve içerik güncellemeleri (önbellek)</li>
 </ul>
 <p>Uygulamayı kaldırdığınızda bu bilgiler de cihazınızdan silinir.</p>
 
-<h2>Namaz vakitleri nasıl hesaplanır?</h2>
-<p>İnternet bağlantısı varken, seçtiğiniz il için Diyanet İşleri Başkanlığı'nın
-resmî vakit tablosu indirilir ve birebir gösterilir. İnternet yokken vakitler,
-ilin koordinatları kullanılarak <strong>cihazınızda</strong> Diyanet yöntemiyle
-hesaplanır. Bu işlemler için konum izni gerekmez; uygulama konumunuzu takip
-etmez, ilinizi listeden kendiniz seçersiniz.</p>
+<h2>Hocaya Sor (isteğe bağlı)</h2>
+<p>Hocaya Sor, dinî sorularınıza yapay zekâ destekli cevap verir. Dinî sorular dinî
+inancınıza dair bilgi içerebilir; bu bilgi kanunen <strong>özel nitelikli kişisel veridir</strong>.
+Bu nedenle ilk kullanımda bölümün nasıl çalıştığı gösterilir ve sorularınızın işlenmesine
+ve yurt dışına aktarılmasına <strong>açık rızanız</strong> alınır. Rıza vermezseniz Hocaya Sor
+açılmaz; uygulamanın diğer bölümleri aynen çalışır.</p>
+<h3>Sorularınız</h3>
+<p>Uygulama sorunuzu önce cihazınızdaki hazır cevap bankasında arar; orada cevap
+bulunursa soru hiçbir yere gönderilmez. Bulunamazsa soru ve aynı sohbetteki önceki
+mesajlar, sunucumuz (<code>api.namazvakitleri.app</code>) üzerinden yapay zekâ hizmet
+sağlayıcımız OpenAI'ye (ABD) iletilir ve cevap size geri gönderilir. Sunucumuz soru ve
+cevap metinlerini kaydetmez; işlem kayıtlarında yalnızca kullanılan model, cevabın
+bitiş durumu, kullanılan hazır cevap kayıtlarının numaraları ve metin uzunluğu (token
+sayısı) gibi teknik bilgiler tutulur. OpenAI'ye iletilen veriler
+<a href="https://openai.com/policies/" rel="noopener">OpenAI'nin politikalarına</a> tabidir.
+Lütfen sorularınıza adınız, adresiniz veya sağlık bilgileriniz gibi kişisel bilgiler yazmayın.</p>
+<h3>Bildirdiğiniz cevaplar</h3>
+<p>Bir cevabı "Bildir" düğmesiyle hatalı veya uygunsuz olarak işaretlerseniz, o soru,
+cevap ve yazdığınız açıklama inceleme amacıyla sunucumuzda en fazla 12 ay saklanır,
+sonra otomatik olarak silinir.</p>
+<h3>Günlük soru hakkı</h3>
+<p>Günlük ücretsiz soru hakkını sayabilmek için uygulama, sizinle ilişkilendirilmeyen
+rastgele bir cihaz kimliği üretir ve sorularla birlikte gönderir. Kötüye kullanımı
+önlemek için IP adresiniz de günlük sayaçta geçici olarak kullanılır; bu sayaçlar
+yalnızca sunucu belleğinde tutulur ve her gün sıfırlanır.</p>
+
+<h2>Soru paketleri ve Google ile giriş (isteğe bağlı)</h2>
+<p>Ek soru hakkı almak isterseniz satın alma Google Play üzerinden yapılır. Ödeme
+bilgileriniz Google tarafından işlenir; biz kart veya ödeme bilgilerinizi görmeyiz.
+Satın aldığınız soruların telefon değiştirdiğinizde ya da uygulamayı yeniden
+kurduğunuzda kaybolmaması için paket almadan önce Google hesabınızla giriş yaparsınız.</p>
+<ul>
+  <li>Giriş yaptığınızda Google'ın verdiği kimlik jetonu sunucumuza gönderilir. Bu jeton
+  hesabınızın anonim kimliğini (bir sayı dizisi) ve Google'ın eklediği e-posta adresi ile
+  ad bilgisini içerir. Sunucumuz jetonu yalnızca doğrulamak için kullanır ve
+  <strong>yalnızca anonim kimliği</strong>, kalan soru sayınızı ve oturum anahtarınızı saklar.
+  <strong>E-posta adresinizi ve adınızı sunucumuza kaydetmeyiz;</strong> e-posta adresiniz
+  yalnızca kimle giriş yaptığınızı göstermek için cihazınızda tutulur.</li>
+  <li>Bir satın almanın iki kez yüklenmemesi için Google Play'in satın alma jetonu,
+  ürün adı ve tarihi saklanır; satın alma doğrulandığında işlem kaydına Google Play
+  sipariş numarası yazılır.</li>
+  <li>"Çıkış yap" ile oturumunuz sunucuda da geçersiz kılınır.</li>
+</ul>
+
+<h2>Değerlendirme ve geri bildirim</h2>
+<p>Uygulamayı düşük puanla değerlendirip neden yazarsanız, metin kendi e-posta
+uygulamanızda bize hitaben bir taslak olarak açılır; yalnızca siz gönderirseniz
+bize ulaşır.</p>
 
 <h2>İnternet erişimi</h2>
-<p>Uygulama interneti yalnızca iki amaçla kullanır:</p>
+<p>Uygulama interneti şu amaçlarla kullanır:</p>
 <ul>
-  <li>Seçili il için Diyanet vakit tablosunu indirmek (yaklaşık 30 günlük, cihazda önbelleğe alınır).</li>
-  <li>Dinlemek istediğiniz ayetin sesli tilavetini indirmek (bir kez iner, sonra çevrimdışı çalar).</li>
+  <li>Seçili il için Diyanet vakit tablosunu indirmek (yaklaşık 30 günlük, cihazda
+  önbelleğe alınır; kaynak: ezanvakti.emushaf.net).</li>
+  <li>Dinlemek istediğiniz ayetin sesli tilavetini indirmek (kaynak: everyayah.com).</li>
+  <li>Dua, hadis ve hazır cevap içeriği güncellemelerini sunucumuzdan indirmek
+  (kişisel veri gönderilmez).</li>
+  <li>Kullanırsanız Hocaya Sor, Google ile giriş ve soru paketi satın alma.</li>
 </ul>
-<p>Bu isteklerde kişisel veri gönderilmez; sunucuya yalnızca istenen dosyanın
-adı ve, her internet bağlantısında olduğu gibi, cihazınızın IP adresi ulaşır.
-Dosyalar üçüncü taraf kaynaklardan indirilir (vakit tablosu: ezanvakti.emushaf.net,
-tilavet: everyayah.com). İnternet olmadan da uygulama tüm işlevleriyle çalışır.</p>
+<p>Her internet bağlantısında olduğu gibi, bağlanılan sunucuya cihazınızın IP adresi
+ulaşır; sunucumuzun ve barındırma altyapısının teknik erişim kayıtlarında IP adresi,
+istek zamanı ve istenen adres kısa süreli olarak bulunabilir. İçerik ve yapılandırma
+indirmelerinde hesap veya oturum bilgisi gönderilmez. Hocaya Sor dışındaki tüm
+özellikler internet olmadan da çalışır.</p>
+
+<h2>Üçüncü taraflar</h2>
+<ul>
+  <li><strong>OpenAI:</strong> Hocaya Sor cevaplarını üretir.</li>
+  <li><strong>Google:</strong> Google ile giriş ve Google Play faturalandırma.</li>
+</ul>
+<p>Verileriniz reklam amacıyla kullanılmaz, satılmaz ve bunların dışında kimseyle
+paylaşılmaz.</p>
 
 <h2>İzinler</h2>
 <ul>
   <li><strong>Bildirimler:</strong> ezan vakti ve hatırlatma bildirimleri için.</li>
-  <li><strong>Tam zamanlı alarm:</strong> bildirimlerin dakikası dakikasına
-  iletilmesi için.</li>
-  <li><strong>İnternet:</strong> yalnızca yukarıda açıklanan iki indirme için.</li>
-  <li><strong>Yeniden başlatma sonrası çalıştırma:</strong> telefon yeniden
-  başladığında bildirimlerin yeniden kurulması için.</li>
+  <li><strong>Tam zamanlı alarm:</strong> bildirimlerin dakikası dakikasına iletilmesi için.</li>
+  <li><strong>İnternet:</strong> yukarıda açıklanan amaçlar için.</li>
+  <li><strong>Google Play faturalandırma:</strong> soru paketi satın alımı için.</li>
+  <li><strong>Yeniden başlatma sonrası çalıştırma:</strong> telefon yeniden başladığında
+  bildirimlerin yeniden kurulması için.</li>
   <li><strong>Titreşim:</strong> zikirmatik ve kıble hizalama geri bildirimi için.</li>
-  <li><strong>Pil optimizasyonu muafiyeti (isteğe bağlı):</strong> bazı
-  cihazlarda bildirimlerin gecikmemesi için; yalnızca siz onaylarsanız etkinleşir.</li>
+  <li><strong>Pil optimizasyonu muafiyeti (isteğe bağlı):</strong> bazı cihazlarda
+  bildirimlerin gecikmemesi için; yalnızca siz onaylarsanız etkinleşir.</li>
 </ul>
+<p>Uygulama konum izni istemez ve konumunuzu takip etmez; ilinizi listeden kendiniz seçersiniz.</p>
+
+<h2>KVKK aydınlatma metni</h2>
+<p>6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) uyarınca:</p>
+<p><strong>Veri sorumlusu:</strong> Aykut Yıldırım (WAO), Derecik Mah. 1444 Sk. No: 2, 55200 İlkadım/Samsun, Türkiye · <a href="mailto:waoyazilim@gmail.com">waoyazilim@gmail.com</a></p>
+<table>
+  <tr><th>Veri</th><th>Amaç</th><th>Hukuki sebep</th><th>Saklama süresi</th></tr>
+  <tr><td>Hocaya Sor soruları ve sohbet mesajları</td><td>Sorunun cevaplanması</td>
+      <td>Açık rıza (KVKK m.6, özel nitelikli veri)</td><td>Sunucumuzda saklanmaz; OpenAI'de onun politikasına göre</td></tr>
+  <tr><td>Bildirilen soru, cevap ve açıklama</td><td>Hatalı cevapların incelenmesi ve düzeltilmesi</td>
+      <td>Açık rıza</td><td>En fazla 12 ay</td></tr>
+  <tr><td>Rastgele cihaz kimliği ve IP adresi</td><td>Günlük ücretsiz soru hakkının sayılması, kötüye kullanımın önlenmesi</td>
+      <td>Meşru menfaat (KVKK m.5/2-f)</td><td>Gün sonuna kadar (yalnızca bellekte)</td></tr>
+  <tr><td>Google hesabının anonim kimliği, soru bakiyesi, oturum anahtarı</td><td>Satın alınan soru haklarının hesaba tanımlanması</td>
+      <td>Sözleşmenin ifası (KVKK m.5/2-c)</td><td>Hesap silinene kadar</td></tr>
+  <tr><td>Satın alma jetonu, ürün, tarih, sipariş numarası</td><td>Satın almanın doğrulanması, mükerrer yüklemenin önlenmesi, mali kayıt</td>
+      <td>Sözleşmenin ifası; hukuki yükümlülük (KVKK m.5/2-ç)</td><td>Mevzuatın öngördüğü süre boyunca</td></tr>
+  <tr><td>Teknik erişim kayıtları (IP, zaman, istek)</td><td>Hizmet güvenliği ve hata giderme</td>
+      <td>Meşru menfaat</td><td>Kısa süreli; barındırma altyapısının kayıt döngüsü</td></tr>
+</table>
+<p><strong>Toplama yöntemi:</strong> Veriler, uygulamayı kullanmanız sırasında elektronik
+ortamda otomatik olarak toplanır.</p>
+<p><strong>Aktarım:</strong> Hocaya Sor soruları, açık rızanıza dayanarak (KVKK m.9) yapay zekâ
+hizmet sağlayıcımız OpenAI'ye (ABD) aktarılır. Google ile giriş ve satın alma işlemleri
+Google tarafından (Google'ın kendi gizlilik politikasına göre) işlenir. Sunucumuz
+Türkiye'de bulunmaktadır. Verileriniz bunların dışında kimseye aktarılmaz.</p>
+<p><strong>Haklarınız (KVKK m.11):</strong> Kişisel verilerinizin işlenip işlenmediğini öğrenme,
+işlenmişse bilgi talep etme, işlenme amacını ve amaca uygun kullanılıp kullanılmadığını
+öğrenme, yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri bilme, eksik veya yanlış
+işlenmişse düzeltilmesini, silinmesini veya yok edilmesini isteme, bu işlemlerin aktarıldığı
+üçüncü kişilere bildirilmesini isteme, münhasıran otomatik sistemlerle analiz edilmesi
+sonucu aleyhinize bir sonuç çıkmasına itiraz etme ve kanuna aykırı işleme sebebiyle zarara
+uğramanız hâlinde zararın giderilmesini talep etme haklarına sahipsiniz. Açık rızanızı
+dilediğiniz zaman geri alabilirsiniz; geri alma, önceki işlemlerin hukuka uygunluğunu etkilemez.</p>
+<p><strong>Başvuru:</strong> Taleplerinizi yukarıdaki veri sorumlusu adresine yazılı olarak ya da
+<a href="mailto:waoyazilim@gmail.com">waoyazilim@gmail.com</a> adresine e-posta ile iletebilirsiniz.
+Başvurunuz en geç 30 gün içinde ücretsiz olarak sonuçlandırılır.</p>
+
+<h2>Verilerinizin silinmesi</h2>
+<p>Cihazınızdaki tüm veriler uygulamayı kaldırdığınızda silinir. Sunucumuzdaki hesap
+ve soru bakiyesi kaydınızın silinmesini istiyorsanız
+<a href="mailto:waoyazilim@gmail.com">waoyazilim@gmail.com</a> adresine yazın; kaydınızı
+en geç 30 gün içinde sileriz. Silinen hesaptaki kullanılmamış soru hakları geri getirilemez.</p>
 
 <h2>Çocukların gizliliği</h2>
-<p>Uygulama veri toplamadığı için çocuklardan da hiçbir veri toplanmaz.</p>
+<p>Uygulamanın temel özellikleri veri toplamaz. Hocaya Sor'da kişisel bilgi yazılmaması
+istenir; çocukların bu bölümü ebeveyn gözetiminde kullanmasını öneririz.</p>
 
 <h2>Değişiklikler</h2>
-<p>Bu politika değişirse güncel sürüm bu sayfada yayımlanır.</p>
+<p>Bu politika değişirse güncel sürüm bu sayfada, güncelleme tarihiyle birlikte yayımlanır.</p>
 
 <h2>İletişim</h2>
 <p>Geliştirici: WAO · Sorularınız için: <a href="mailto:waoyazilim@gmail.com">waoyazilim@gmail.com</a></p>
 
 <hr>
 <h1>Privacy Policy (English)</h1>
-<p class="tarih">Last updated: September 5, 2026</p>
+<p class="tarih">Last updated: November 16, 2026</p>
 <p>This policy applies to the <strong>Namaz Vakitleri: İnternetsiz</strong> mobile application
-(package <code>com.waoyazilim.namazvakti</code>) published on Google Play.
-In short: <strong>we do not collect any personal data.</strong></p>
-<p>The app does not collect, store, or share any personal data. There are no
-accounts, no ads, no analytics/tracking libraries and no servers of our own. Your
-preferences (selected province, notification, adhan sound and theme settings,
-prayer tracking marks, tasbih counters, Quran reading position, bookmarks) are
-stored only on your device and are deleted when you uninstall the app.</p>
-<p>Prayer times are taken from the official table of the Turkish Presidency of
-Religious Affairs (Diyanet) when the device is online, and calculated on the
-device with the same method when offline. No location permission is required;
-you pick your province from a list and the app never tracks your location.</p>
-<p>Internet is used for two downloads only: the Diyanet prayer-time table for
-your province (cached for about 30 days) and Quran recitation audio for the
-verses you choose to listen to (downloaded once, then played offline). These
-requests carry no personal data; as with any connection, only the requested
-file name and your device's IP address reach the third-party servers
-(ezanvakti.emushaf.net and everyayah.com). The app works fully offline.</p>
-<p>Permissions used: notifications (adhan alerts), exact alarms (on-time
-delivery), internet (the two downloads above), boot completed (re-scheduling
-alerts after a restart), vibration (tasbih and qibla feedback), and an optional
-battery-optimization exemption you may grant for reliable delivery.
-Since no data is collected, no data is collected from children either.
-Developer: WAO · Contact: <a href="mailto:waoyazilim@gmail.com">waoyazilim@gmail.com</a></p>
+(package <code>com.waoyazilim.namazvakti</code>) published on Google Play.</p>
+<p><strong>Summary:</strong> prayer times, adhan notifications, qibla, Quran, duas, tasbih
+counter and tracking features run entirely on your device and collect no personal data.
+There are no ads and no analytics/tracking libraries. Only if you use the optional
+<strong>Ask the Hodja</strong> feature are your questions sent to our server to be answered,
+and only if you buy a question pack do you sign in with your Google account.</p>
+<p><strong>On your device:</strong> your province, settings, prayer tracking, tasbih counters,
+Quran reading position, bookmarks and cached downloads stay on your device and are
+deleted when you uninstall the app.</p>
+<p><strong>Ask the Hodja:</strong> the app first searches its on-device answer bank; if an answer
+is found, nothing is sent. Otherwise your question and the earlier messages of the same
+conversation are sent through our server (<code>api.namazvakitleri.app</code>) to our AI
+provider OpenAI, and the answer is returned to you. Our server does not store question or
+answer texts; only technical logs such as the model used and text length are kept. Data sent
+to OpenAI is subject to <a href="https://openai.com/policies/" rel="noopener">OpenAI's policies</a>.
+Religious questions may reveal your religious beliefs, which the law treats as special
+category data; your explicit consent to processing and to the transfer to OpenAI (USA) is
+asked before first use, and Ask the Hodja stays closed without it. Please do not include
+personal information in your questions. Answers you report with the "Report" button are
+stored with your question and comment for review for at most 12 months, then deleted
+automatically. To count the daily free
+question, the app sends a random device identifier that is not linked to you; your IP address is
+also used temporarily in daily counters kept only in server memory and reset every day.</p>
+<p><strong>Question packs and Google sign-in:</strong> purchases are made through Google Play;
+we never see your payment details. Before buying, you sign in with Google so your questions are
+not lost when you change phones. The ID token Google issues is sent to our server; it contains
+your account's anonymous identifier and the email address and name Google includes. Our server
+uses the token only for verification and stores only the anonymous identifier, your remaining
+question balance and your session key. <strong>We do not store your email address or
+name on our server;</strong> your email is kept only on your device to show which account you
+signed in with. Purchase tokens, product name and date are stored so a purchase is never
+credited twice, and the Google Play order number is written to the server log. Signing out also invalidates your session on our server.</p>
+<p><strong>Feedback:</strong> if you rate the app low and write a reason, it opens as a draft in
+your own email app and reaches us only if you send it.</p>
+<p><strong>Internet</strong> is used to download the Diyanet prayer-time table
+(ezanvakti.emushaf.net), Quran recitation audio (everyayah.com), content updates from our server
+(no personal data), and, if you use them, Ask the Hodja, Google sign-in and purchases. As with any
+connection, your IP address reaches the servers you connect to. Everything except Ask the Hodja
+works offline. Technical access logs of our server and hosting infrastructure may briefly
+contain your IP address, request time and requested address; content and configuration
+downloads carry no account or session information.</p>
+<p><strong>Data controller and your rights (Turkish Personal Data Protection Law, KVKK):</strong>
+the data controller is Aykut Yıldırım (WAO), Derecik Mah. 1444 Sk. No: 2, 55200 İlkadım/Samsun, Türkiye. You may request information about, correction or
+deletion of your personal data, learn the third parties it is transferred to, object to
+decisions made solely by automated systems, and withdraw your consent at any time, by writing
+to the address above or to <a href="mailto:waoyazilim@gmail.com">waoyazilim@gmail.com</a>;
+requests are answered free of charge within 30 days.</p>
+<p><strong>Third parties:</strong> OpenAI (generates Ask the Hodja answers) and Google (sign-in and
+Google Play billing). Your data is not used for advertising, not sold and not shared with anyone else.</p>
+<p><strong>Permissions:</strong> notifications, exact alarms, internet, Google Play billing (question
+packs), boot completed (re-scheduling alerts), vibration, and an optional battery-optimization
+exemption. No location permission is requested.</p>
+<p><strong>Deletion:</strong> on-device data is deleted when you uninstall the app. To delete your
+account and question balance on our server, email
+<a href="mailto:waoyazilim@gmail.com">waoyazilim@gmail.com</a>; we delete it within 30 days. Unused
+questions in a deleted account cannot be restored.</p>
+<p><strong>Children:</strong> the core features collect no data. Ask the Hodja asks users not to write
+personal information; we recommend children use it under parental supervision.</p>
+<p>Developer: WAO · Contact: <a href="mailto:waoyazilim@gmail.com">waoyazilim@gmail.com</a></p>
 </body>
 </html>
