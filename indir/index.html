@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Namaz Vakitleri: İnternetsiz — Google Play'den indir</title>
+<meta name="description" content="Namaz Vakitleri: İnternetsiz uygulamasını Google Play'den ücretsiz indirin.">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://namazvakitleri.app/">
+<meta name="theme-color" content="#0E4D38">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Namaz Vakitleri">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:url" content="https://namazvakitleri.app/indir/">
+<meta property="og:title" content="Namaz Vakitleri: İnternetsiz — Ücretsiz indir">
+<meta property="og:description" content="Diyanet uyumlu vakitler, ezan bildirimi, kıble, Kur'an. İnternetsiz, reklamsız, ücretsiz Android uygulaması.">
+<meta property="og:image" content="https://namazvakitleri.app/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://namazvakitleri.app/og.png">
+
+<link rel="icon" type="image/png" sizes="192x192" href="/ikon-192.png">
+<meta http-equiv="refresh" content="2;url=https://play.google.com/store/apps/details?id=com.waoyazilim.namazvakti">
+<style>
+  body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;
+       font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:#0E4D38;color:#fff;text-align:center}
+  main{padding:24px;max-width:360px}
+  img.ikon{width:96px;height:96px;border-radius:22px}
+  h1{font-size:1.3rem;margin:16px 0 8px}
+  p{opacity:.85;margin:0 0 20px}
+  a.rozet img{height:64px}
+</style>
+</head>
+<body>
+<main>
+  <img class="ikon" src="/ikon-192.png" alt="Namaz Vakitleri simgesi">
+  <h1>Namaz Vakitleri: İnternetsiz</h1>
+  <p>Google Play'e yönlendiriliyorsunuz…</p>
+  <a class="rozet" id="git" href="https://play.google.com/store/apps/details?id=com.waoyazilim.namazvakti">
+    <img src="/google-play-rozeti.png" alt="Google Play'den alın">
+  </a>
+</main>
+<script>
+(function () {
+  var paket = "com.waoyazilim.namazvakti";
+  // ?k=instagram gibi bir kaynak verilirse Play Console'da edinme kaynağı olarak görünür.
+  var k = (new URLSearchParams(location.search).get("k") || "site").replace(/[^a-z0-9_-]/gi, "").slice(0, 30) || "site";
+  var referrer = encodeURIComponent("utm_source=" + k + "&utm_medium=link");
+  var web = "https://play.google.com/store/apps/details?id=" + paket + "&referrer=" + referrer;
+  document.getElementById("git").href = web;
+  if (/android/i.test(navigator.userAgent)) {
+    // Instagram/Facebook uygulama içi tarayıcısından doğrudan Play Store uygulamasını açar.
+    location.href = "intent://details?id=" + paket + "&referrer=" + referrer +
+      "#Intent;scheme=market;package=com.android.vending;S.browser_fallback_url=" +
+      encodeURIComponent(web) + ";end";
+  } else {
+    location.replace(web);
+  }
+})();
+</script>
+</body>
+</html>
