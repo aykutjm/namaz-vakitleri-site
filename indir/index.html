@@ -47,7 +47,7 @@
   var paket = "com.waoyazilim.namazvakti";
   // ?k=instagram gibi bir kaynak verilirse Play Console'da edinme kaynağı olarak görünür.
   var k = (new URLSearchParams(location.search).get("k") || "site").replace(/[^a-z0-9_-]/gi, "").slice(0, 30) || "site";
-  var referrer = encodeURIComponent("utm_source=" + k + "&utm_medium=link");
+  var referrer = encodeURIComponent("utm_source=" + k + "&utm_medium=link&utm_campaign=indir-" + k);
   var web = "https://play.google.com/store/apps/details?id=" + paket + "&referrer=" + referrer;
   document.getElementById("git").href = web;
   if (/android/i.test(navigator.userAgent)) {
