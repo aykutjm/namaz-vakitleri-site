@@ -23,7 +23,7 @@
 <body>
 <a class="geri" href="/">← Ana sayfa</a> · <a class="geri" href="kullanim-sartlari.html">Kullanım Şartları</a>
 <h1>Gizlilik Politikası</h1>
-<p class="tarih">Son güncelleme: 16 Kasım 2026</p>
+<p class="tarih">Son güncelleme: 24 Kasım 2026</p>
 
 <p>Bu politika, Google Play'de yayımlanan <strong>Namaz Vakitleri: İnternetsiz</strong>
 (paket adı <code>com.waoyazilim.namazvakti</code>) mobil uygulaması için geçerlidir.</p>
@@ -43,6 +43,8 @@ cihazınızda saklanır ve hiçbir sunucuya gönderilmez:</p>
   <li>İbadet takibi işaretleriniz, kaza kayıtlarınız ve zikir sayaçlarınız</li>
   <li>Kur'an'da kaldığınız yer, hatim ilerlemeniz ve favori içerikleriniz</li>
   <li>İndirilen vakit tablosu, tilavet ses dosyaları ve içerik güncellemeleri (önbellek)</li>
+  <li>Hocaya Sor konuşma geçmişiniz (en fazla 50 konuşma) ve indirdiğiniz hoca sesleri;
+  bunları uygulamadaki "Geçmiş konuşmalar" bölümünden tek tek ya da tümüyle silebilirsiniz</li>
 </ul>
 <p>Uygulamayı kaldırdığınızda bu bilgiler de cihazınızdan silinir.</p>
 
@@ -62,6 +64,27 @@ bitiş durumu, kullanılan hazır cevap kayıtlarının numaraları ve metin uzu
 sayısı) gibi teknik bilgiler tutulur. OpenAI'ye iletilen veriler
 <a href="https://openai.com/policies/" rel="noopener">OpenAI'nin politikalarına</a> tabidir.
 Lütfen sorularınıza adınız, adresiniz veya sağlık bilgileriniz gibi kişisel bilgiler yazmayın.</p>
+<h3>Cevapları sesli dinleme (isteğe bağlı)</h3>
+<p>Bir cevabın altındaki "Dinle" düğmesiyle iki seçenek sunulur:</p>
+<ul>
+  <li><strong>Telefonun sesiyle dinle:</strong> cevap, telefonunuzdaki metin okuma
+  motoruyla cihazda okunur; uygulama bunun için hiçbir yere veri göndermez.</li>
+  <li><strong>Hoca sesiyle dinle:</strong> cevabın metni, rastgele cihaz kimliği (ve giriş
+  yaptıysanız oturum anahtarı) ile sunucumuza gönderilir. Sunucumuz yalnızca
+  <strong>cevap metnini</strong>, kimliğinizle ilgili hiçbir bilgi eklemeden önce yapay zekâ
+  hizmet sağlayıcımız OpenAI'ye (ABD) gönderir; OpenAI metni sesli okumaya uygun konuşma
+  diline çevirir (listeleri akıcı cümlelere dönüştürür, kısaltmaları açar, anlamı değiştirmez).
+  Ardından bu metin seslendirme hizmet sağlayıcımız ElevenLabs'e (ABD) iletilir ve üretilen
+  ses size gönderilir. Sorunuz ve kişisel bilgileriniz bu adımlarda gönderilmez. Seçenek ekranında bu aktarım belirtilir;
+  "Hoca sesiyle dinle"ye dokunarak açık rıza vermiş olursunuz. ElevenLabs'e iletilen veriler
+  <a href="https://elevenlabs.io/privacy-policy" rel="noopener">ElevenLabs'in politikalarına</a> tabidir.</li>
+</ul>
+<p>Aynı cevap tekrar seslendirilmesin diye üretilen ses dosyası sunucumuzda, adı cevap
+metninin özeti olacak şekilde saklanır; bu dosya kimseyle ilişkilendirilmez. Ücretsiz
+deneme haklarını sayabilmek için rastgele cihaz kimliğinizin kaç deneme kullandığı
+sunucumuzda tutulur. İşlem kayıtlarında yalnızca model, karakter sayısı ve ödeme türü
+(deneme/soru hakkı) gibi teknik bilgiler yer alır. İndirilen ses cihazınıza kaydedilir;
+tekrar dinlemek ücretsizdir ve internet gerektirmez.</p>
 <h3>Bildirdiğiniz cevaplar</h3>
 <p>Bir cevabı "Bildir" düğmesiyle hatalı veya uygunsuz olarak işaretlerseniz, o soru,
 cevap ve yazdığınız açıklama inceleme amacıyla sunucumuzda en fazla 12 ay saklanır,
@@ -126,6 +149,8 @@ indirmelerinde hesap veya oturum bilgisi gönderilmez. Hocaya Sor dışındaki t
 <h2>Üçüncü taraflar</h2>
 <ul>
   <li><strong>OpenAI:</strong> Hocaya Sor cevaplarını üretir.</li>
+  <li><strong>ElevenLabs:</strong> isterseniz Hocaya Sor cevaplarını "hoca sesi"yle seslendirir
+  (yalnızca cevap metni iletilir).</li>
   <li><strong>Google:</strong> Google ile giriş ve Google Play faturalandırma.</li>
 </ul>
 <p>Verileriniz reklam amacıyla kullanılmaz, satılmaz ve bunların dışında kimseyle
@@ -152,6 +177,10 @@ paylaşılmaz.</p>
   <tr><th>Veri</th><th>Amaç</th><th>Hukuki sebep</th><th>Saklama süresi</th></tr>
   <tr><td>Hocaya Sor soruları ve sohbet mesajları</td><td>Sorunun cevaplanması</td>
       <td>Açık rıza (KVKK m.6, özel nitelikli veri)</td><td>Sunucumuzda saklanmaz; OpenAI'de onun politikasına göre</td></tr>
+  <tr><td>Hoca sesi için cevap metni</td><td>Cevabın seslendirilmesi</td>
+      <td>Açık rıza</td><td>Ses dosyası sunucumuzda kimseyle ilişkilendirilmeden önbellekte; OpenAI ve ElevenLabs'de onların politikasına göre</td></tr>
+  <tr><td>Rastgele cihaz kimliğinin kullandığı ses denemesi sayısı</td><td>Ücretsiz deneme hakkının sayılması</td>
+      <td>Meşru menfaat (KVKK m.5/2-f)</td><td>Hizmet sürdükçe (yalnızca bir sayı)</td></tr>
   <tr><td>Bildirilen soru, cevap ve açıklama</td><td>Hatalı cevapların incelenmesi ve düzeltilmesi</td>
       <td>Açık rıza</td><td>En fazla 12 ay</td></tr>
   <tr><td>Rastgele cihaz kimliği ve IP adresi</td><td>Günlük ücretsiz soru hakkının sayılması, kötüye kullanımın önlenmesi</td>
@@ -168,7 +197,10 @@ paylaşılmaz.</p>
 <p><strong>Toplama yöntemi:</strong> Veriler, uygulamayı kullanmanız sırasında elektronik
 ortamda otomatik olarak toplanır.</p>
 <p><strong>Aktarım:</strong> Hocaya Sor soruları, açık rızanıza dayanarak (KVKK m.9) yapay zekâ
-hizmet sağlayıcımız OpenAI'ye (ABD) aktarılır. Google ile giriş ve satın alma işlemleri
+hizmet sağlayıcımız OpenAI'ye (ABD) aktarılır. Hoca sesiyle dinlemeyi seçerseniz cevap
+metni, açık rızanıza dayanarak konuşma diline çevrilmek üzere OpenAI'ye ve seslendirme hizmet
+sağlayıcımız ElevenLabs'e (ABD) aktarılır.
+Google ile giriş ve satın alma işlemleri
 Google tarafından (Google'ın kendi gizlilik politikasına göre) işlenir. Sunucumuz
 Türkiye'de bulunmaktadır. Verileriniz bunların dışında kimseye aktarılmaz.</p>
 <p><strong>Haklarınız (KVKK m.11):</strong> Kişisel verilerinizin işlenip işlenmediğini öğrenme,
@@ -201,7 +233,7 @@ istenir; çocukların bu bölümü ebeveyn gözetiminde kullanmasını öneririz
 
 <hr>
 <h1>Privacy Policy (English)</h1>
-<p class="tarih">Last updated: November 16, 2026</p>
+<p class="tarih">Last updated: November 24, 2026</p>
 <p>This policy applies to the <strong>Namaz Vakitleri: İnternetsiz</strong> mobile application
 (package <code>com.waoyazilim.namazvakti</code>) published on Google Play.</p>
 <p><strong>Summary:</strong> prayer times, adhan notifications, qibla, Quran, duas, tasbih
@@ -210,8 +242,20 @@ There are no ads and no analytics/tracking libraries. Only if you use the option
 <strong>Ask the Hodja</strong> feature are your questions sent to our server to be answered,
 and only if you buy a question pack do you sign in with your Google account.</p>
 <p><strong>On your device:</strong> your province, settings, prayer tracking, tasbih counters,
-Quran reading position, bookmarks and cached downloads stay on your device and are
-deleted when you uninstall the app.</p>
+Quran reading position, bookmarks, cached downloads, your Ask the Hodja conversation
+history (up to 50 conversations) and downloaded voice answers stay on your device and are
+deleted when you uninstall the app; conversations can also be deleted in the app.</p>
+<p><strong>Listening to answers:</strong> "Listen" offers two options. <em>Phone voice</em> reads the
+answer with your phone's text-to-speech engine on the device; nothing is sent. <em>Teacher's
+voice</em> sends the answer text with the random device identifier (and session key if signed in)
+to our server, which sends <strong>only the answer text</strong>, without any identifier, to OpenAI
+(USA) to rewrite it as natural spoken language (without changing its meaning) and then to our
+voice provider ElevenLabs (USA), and returns the audio. Your question and personal data are not
+sent to ElevenLabs; the option screen states this transfer and tapping it gives your explicit
+consent. Generated audio is cached on our server under a digest of the answer text, linked to
+no one; the number of free tries used by the random device identifier is stored on our server.
+Data sent to ElevenLabs is subject to
+<a href="https://elevenlabs.io/privacy-policy" rel="noopener">ElevenLabs' policies</a>.</p>
 <p><strong>Ask the Hodja:</strong> the app first searches its on-device answer bank; if an answer
 is found, nothing is sent. Otherwise your question and the earlier messages of the same
 conversation are sent through our server (<code>api.namazvakitleri.app</code>) to our AI
@@ -258,7 +302,8 @@ deletion of your personal data, learn the third parties it is transferred to, ob
 decisions made solely by automated systems, and withdraw your consent at any time, by writing
 to the address above or to <a href="mailto:info@waotr.com">info@waotr.com</a>;
 requests are answered free of charge within 30 days.</p>
-<p><strong>Third parties:</strong> OpenAI (generates Ask the Hodja answers) and Google (sign-in and
+<p><strong>Third parties:</strong> OpenAI (generates Ask the Hodja answers), ElevenLabs (optional
+teacher's voice; answer text only) and Google (sign-in and
 Google Play billing). Your data is not used for advertising, not sold and not shared with anyone else.</p>
 <p><strong>Permissions:</strong> notifications, exact alarms, internet, Google Play billing (question
 packs and support payments), boot completed (re-scheduling alerts), vibration, and an optional battery-optimization
